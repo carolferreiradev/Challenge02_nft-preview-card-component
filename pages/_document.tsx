@@ -1,4 +1,4 @@
-import { Head, Html, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   render() {
@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
           />
           <link
             rel="shortcut icon"
-            href="/favicon-32x32.png.png"
+            href="/favicon-32x32.png"
             type="image/png"
           />
           <meta
