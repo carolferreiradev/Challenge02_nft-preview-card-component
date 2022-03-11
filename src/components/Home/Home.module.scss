@@ -1,0 +1,142 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 90vh;
+}
+.card {
+  background: var(--blue-700);
+  padding: 1.6rem;
+  margin: 1.6rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+}
+
+.cardImageContent {
+  height: 18rem;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  img {
+    transition: opacity 0.2s;
+    border-radius: 8px;
+  }
+  
+  &:hover {
+    img {
+      opacity: 0.3;
+    }
+    .hoverImage {
+      opacity: 1;
+      background: hsla(178, 100%, 75%, 0.534);
+    }
+  }
+}
+.hoverImage {
+  transition: background 0.2s;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+.cardTextsContent {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    transition: color 0.2s;
+    &:hover {
+      color: var(--cyan-200);
+    }
+  }
+  p {
+    color: var(--blue-500);
+    margin-bottom: 1.5rem;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span:first-child {
+      color: var(--cyan-200);
+    }
+    span:last-child {
+      color: var(--blue-500);
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+  }
+  .cardTextsContentIcon {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    margin-right: 4px;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--blue-600);
+  margin: 1.5rem 0;
+}
+
+.cardUser {
+  display: flex;
+  align-items: center;
+
+  .cardUserAvatar {
+    position: relative;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--white);
+    margin-right: 18px;
+  }
+  p {
+    color: var(--blue-500);
+    span {
+      color: var(--white);
+      cursor: pointer;
+      transition: color 0.2s;
+      &:hover {
+        color: var(--cyan-200);
+      }
+    }
+  }
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: var(--white);
+  
+  a {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+      color: var(--cyan-200);
+    }
+  }
+
+  @media(max-width: 600px){
+    flex-direction: column;
+  }
+}
