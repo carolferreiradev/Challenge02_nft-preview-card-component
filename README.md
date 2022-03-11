@@ -5,7 +5,7 @@
 
 <p align="center">
 Home
-  <img alt="home" src="https://github.com/carolferreiradev/Challenge01_FrontendMentor_QR-Code-page/blob/main/public/challenge.png" width="100%">
+  <img alt="home" src="https://github.com/carolferreiradev/Challenge02_nft-preview-card-component/blob/main/public/github.png" width="100%">
 </p>
 
 ## 💻 Projeto
