@@ -6,6 +6,7 @@
 <p align="center">
 Home
   <img alt="home" src="https://github.com/carolferreiradev/Challenge02_nft-preview-card-component/blob/main/public/github.png" width="100%">
+  ![caption](https://github.com/carolferreiradev/Challenge02_nft-preview-card-component/blob/main/public/20220310_231552.mp4)
 </p>
 
 ## 💻 Projeto
