@@ -1,4 +1,5 @@
 import { render } from "@testing-library/react";
+import { Home } from "./Home";
 
 jest.mock("next/router", () => {
   return {
@@ -11,7 +12,7 @@ jest.mock("next/router", () => {
 });
 describe("Home component", () => {
   test("home component renders correctly", () => {
-    const { getByText } = render(<h1>Equilibrium #3429</h1>);
+    const { getByText } = render(<Home />);
 
     expect(getByText("Equilibrium #3429")).toBeInTheDocument();
     expect(
@@ -19,6 +20,7 @@ describe("Home component", () => {
     ).toBeInTheDocument();
     expect(getByText("0.041 ETH")).toBeInTheDocument();
     expect(getByText("3 days left")).toBeInTheDocument();
-    expect(getByText("Creation of Jules Wyvern")).toBeInTheDocument();
+    expect(getByText("Creation of")).toBeInTheDocument();
+    expect(getByText("Jules Wyvern")).toBeInTheDocument();
   });
 });
